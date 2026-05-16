@@ -24,7 +24,7 @@ def detect_outliers(
         "ride_time": ride_time,
         "trip_distance": trip_distance
     }])
-
+ ### change to outlier detection test
     try:
         preds = model.predict(input_df)
     except Exception as e:
