@@ -12,6 +12,7 @@ jobs:
     permissions:
       packages: write
 
+    environment: vars
     env:
       MLFLOW_TRACKING_URI: ${{ vars.MLFLOW_TRACKING_URI }}
       MLFLOW_TRACKING_USERNAME: ${{ vars.MLFLOW_TRACKING_USERNAME }}
