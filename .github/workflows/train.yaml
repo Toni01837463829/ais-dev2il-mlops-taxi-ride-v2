@@ -13,7 +13,7 @@ jobs:
       matrix:
         model_type: [ random_forest, random_forest_v2, logistic_regression ]
 
-
+    environment: vars
     env:
       MLFLOW_TRACKING_URI: ${{ vars.MLFLOW_TRACKING_URI }}
       MLFLOW_TRACKING_USERNAME: ${{ vars.MLFLOW_TRACKING_USERNAME }}
