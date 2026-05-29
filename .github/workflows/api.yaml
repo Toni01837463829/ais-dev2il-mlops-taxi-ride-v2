@@ -3,6 +3,12 @@ name: Build Outlier Detection API Server
 on:
   push:
     branches: [main]
+    paths:
+      - ".model-version"
+      - "Dockerfile"
+      - "outlier_detection_api.py"
+      - "pyproject.toml"
+      - "uv.lock"
   workflow_dispatch:
 
 jobs:
