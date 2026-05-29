@@ -4,9 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - "data/**"
+      - ".model-version"
+      - "Dockerfile"
+      - "outlier_detection_api.py"
+      - "pyproject.toml"
       - "uv.lock"
-      - "outlier_detector_training.py"
   workflow_dispatch:
 
 jobs:
